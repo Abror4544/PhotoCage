@@ -1,0 +1,753 @@
+@import 'fonts.css';
+
+:root{
+    --flob: 'Lobster';
+    --fbeb: 'BebasNeue';
+    --farial: 'Arial';
+    --fmyriad: 'Myriad Pro';
+    --grey: #e2e2e2;
+    --orange: #ff7200;
+    --blue: #283e8f;
+    --col-1: calc(100% / 12 * 1);
+    --col-2: calc(100% / 12 * 2);
+    --col-3: calc(100% / 12 * 3);
+    --col-4: calc(100% / 12 * 4);
+    --col-5: calc(100% / 12 * 5);
+    --col-6: calc(100% / 12 * 6);
+    --col-7: calc(100% / 12 * 7);
+    --col-8: calc(100% / 12 * 8);
+    --col-9: calc(100% / 12 * 9);
+    --col-10: calc(100% / 12 * 10);
+    --col-11: calc(100% / 12 * 11);
+    --col-12: calc(100% / 12 * 12);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 990px;
+    width: 100%;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.justify-content-start{
+    justify-content: flex-start;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.align-items-start{
+    align-items: flex-start;
+}
+
+.flex-direction-column{
+    flex-direction: column;
+}
+
+.flex-grow-1{
+    flex-grow: 1;
+}
+
+.col-1{
+    width: var(--col-1);
+    padding: 0 15px;
+}
+
+.col-2{
+    width: var(--col-2);
+    padding: 0 15px;
+}
+
+.col-3{
+    width: var(--col-3);
+    padding: 0 15px;
+}
+
+.col-4{
+    width: var(--col-4);
+    padding: 0 15px;
+}
+
+.col-5{
+    width: var(--col-5);
+    padding: 0 15px;
+}
+
+.col-6{
+    width: var(--col-6);
+    padding: 0 15px;
+}
+
+.col-7{
+    width: var(--col-7);
+    padding: 0 15px;
+}
+
+.col-8{
+    width: var(--col-8);
+    padding: 0 15px;
+}
+
+.col-9{
+    width: var(--col-9);
+    padding: 0 15px;
+}
+
+.col-10{
+    width: var(--col-10);
+    padding: 0 15px;
+}
+
+.col-11{
+    width: var(--col-11);
+    padding: 0 15px;
+}
+
+.col-12{
+    width: var(--col-12);
+    padding: 0 15px;
+}
+
+/* -------------------------------------- */
+
+header{
+    background: linear-gradient(to top, #e2e2e2, #ffffff);
+    height: 116px;
+    border-bottom: 2px solid #cccccc;
+}
+
+header .hider{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo{
+    font-family: var(--flob);
+    color: #676666;
+    font-size: 49px;
+    margin-top: 25px;
+}
+
+header .logo span{
+    color: #ff7700;
+}
+
+header nav li{
+    text-align: center;
+}
+
+header nav li a{
+    display: flex;
+    flex-direction: column;
+    padding: 48px 44px 20px 41px;
+    font-size: 16px;
+    color: #545454;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav li a:hover{
+    background: linear-gradient(to top, #cbc3c3, #fdfdfd);
+    cursor: pointer;
+    border-bottom: 4px solid var(--orange);
+    border-right: 1px solid #e1e1e1;
+    border-left: 1px solid #e1e1e1;
+}
+
+header .ikki{
+    border-right: 1px solid #e1e1e1;
+    border-left: 1px solid #e1e1e1;
+}
+
+header .uch{
+    border-right: 1px solid #e1e1e1;
+}
+
+header nav li .one{
+    height: 16px;
+    width: 17px;
+    margin-left: 12px;
+    margin-bottom: 13px;
+}
+
+header nav li .two{
+    height: 13px;
+    width: 22px;
+    margin-left: 12px;
+    margin-bottom: 15px;
+}
+
+header nav li .three{
+    height: 17px;
+    width: 26px;
+    margin-left: 17px;
+    margin-bottom: 11px;
+}
+
+header nav li .four{
+    height: 20px;
+    width: 17px;
+    margin-left: 15px;
+    margin-bottom: 8px;
+}
+
+/* ----------------------main----------------- */
+main{
+    padding-bottom: 73px;
+}
+main .container form{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+main .container form label{
+    text-align: start;
+}
+
+main .container form h2{
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #565555;
+}
+
+main .container form input{
+    margin-right: 10px;
+    width: 447px;
+    height: 45px;
+    box-shadow: inset 0px 3px 3px #cacaca;    
+    border-radius: 10px;
+    border: 1px solid #cacaca;
+}
+
+main .container form button{
+    width: 208px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to top, #ff6700, #ffa100);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+/* ---------------------section-------------------- */
+section .content {
+    justify-content: space-between;
+}
+section .card{
+    border: 1px solid #d6d6d6;
+    padding: 6px;
+    height: 280px;
+    width: 217px;
+    box-shadow: 1px 0px 5px 2px #d6d6d6;
+    margin-bottom: 25px;
+}
+
+section .rasm{
+    background: url(../img/scimg1.png)no-repeat;
+    height: 196px;
+    position: relative;
+    cursor: zoom-in;
+}
+
+section .rasm1{
+    background: url(../img/scimg2.png)no-repeat;
+    height: 196px;
+    width: 100%;
+    position: relative;
+    cursor: zoom-in;
+}
+
+section .rasm2{
+    background: url(../img/scimg3.png)no-repeat;
+    height: 196px;
+    width: 100%;
+    position: relative;
+    cursor: zoom-in;
+}
+
+section .rasm3{
+    background: url(../img/scimg4.png)no-repeat;
+    height: 196px;
+    width: 100%;
+    position: relative;
+    cursor: zoom-in;
+}
+
+section .rasm4{
+    background: url(../img/scimg5.png)no-repeat;
+    height: 196px;
+    width: 100%;
+    position: relative;
+    cursor: zoom-in;
+}
+
+section .rasm5{
+    background: url(../img/scimg6.png)no-repeat;
+    height: 196px;
+    width: 100%;
+    position: relative;
+    cursor: zoom-in;
+}
+
+section .rasm6{
+    background: url(../img/scimg7.png)no-repeat;
+    height: 196px;
+    width: 100%;
+    position: relative;
+    cursor: zoom-in;
+}
+
+section .rasm7{
+    background: url(../img/scimg8.png)no-repeat;
+    height: 196px;
+    width: 100%;
+    position: relative;
+    cursor: zoom-in;
+}
+
+section .rasm8{
+    background: url(../img/scimg9.png)no-repeat;
+    height: 196px;
+    width: 100%;
+    position: relative;
+    cursor: zoom-in;
+}
+
+section .rasm9{
+    background: url(../img/scimg10.png)no-repeat;
+    height: 196px;
+    width: 100%;
+    position: relative;
+    cursor: zoom-in;
+}
+
+section .rasm10{
+    background: url(../img/scimg11.png)no-repeat;
+    height: 196px;
+    width: 100%;
+    position: relative;
+    cursor: zoom-in;
+}
+
+section .rasm11{
+    background: url(../img/scimg12.png)no-repeat;
+    height: 196px;
+    width: 100%;
+    position: relative;
+    cursor: zoom-in;
+}
+
+section .rasm p{
+    position: absolute;
+    padding-top: 85%;
+    padding-left: 8px;
+    font-family: var(--fbeb);
+    font-size: 19px;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+section .rasm1 p{
+    position: absolute;
+    padding-top: 85%;
+    padding-left: 8px;
+    font-family: var(--fbeb);
+    font-size: 19px;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+section .rasm2 p{
+    position: absolute;
+    padding-top: 85%;
+    padding-left: 8px;
+    font-family: var(--fbeb);
+    font-size: 19px;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+section .rasm3 p{
+    position: absolute;
+    padding-top: 85%;
+    padding-left: 8px;
+    font-family: var(--fbeb);
+    font-size: 19px;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+section .rasm4 p{
+    position: absolute;
+    padding-top: 85%;
+    padding-left: 8px;
+    font-family: var(--fbeb);
+    font-size: 19px;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+section .rasm5 p{
+    position: absolute;
+    padding-top: 85%;
+    padding-left: 8px;
+    font-family: var(--fbeb);
+    font-size: 19px;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+section .rasm6 p{
+    position: absolute;
+    padding-top: 85%;
+    padding-left: 8px;
+    font-family: var(--fbeb);
+    font-size: 19px;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+section .rasm7 p{
+    position: absolute;
+    padding-top: 85%;
+    padding-left: 8px;
+    font-family: var(--fbeb);
+    font-size: 19px;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+section .rasm8 p{
+    position: absolute;
+    padding-top: 85%;
+    padding-left: 8px;
+    font-family: var(--fbeb);
+    font-size: 19px;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+section .rasm9 p{
+    position: absolute;
+    padding-top: 85%;
+    padding-left: 8px;
+    font-family: var(--fbeb);
+    font-size: 19px;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+section .rasm10 p{
+    position: absolute;
+    padding-top: 85%;
+    padding-left: 8px;
+    font-family: var(--fbeb);
+    font-size: 19px;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+section .rasm11 p{
+    position: absolute;
+    padding-top: 85%;
+    padding-left: 8px;
+    font-family: var(--fbeb);
+    font-size: 19px;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+section .title{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0dfdf;
+}
+
+section .title p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #979393;
+    padding: 10px 0px 10px  15px;
+}
+
+section .title img{
+    height: 20px;
+    width: 20px;
+    margin-top: 8px;
+}
+
+section .share{
+    display: flex;
+    justify-content: flex-end;
+}
+
+section .share p{
+    margin-top: 8px;
+    margin-right: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #9f9898;
+}
+
+section .share .i{
+    background: #b1aeae;
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    padding-top: 3px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+section .share .i:hover{
+    background: #283e8f;
+}
+
+/* --------------footer---------------- */
+
+footer p{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #8b8a8a;
+    height: 100px;
+}
+
+/* -------------------media----------------- */
+
+@media (max-width: 1000px){
+    .container{
+        max-width: 890px;
+    }
+}
+
+@media (max-width: 928px){
+    header{
+        height: 100px;
+    }
+    .container{
+        max-width: 790px;
+    }
+    header .logo {
+        font-size: 35px;
+    }
+    main .container form h2 {
+        font-size: 20px;
+    }
+    main .container form input {
+        width: 400px;
+    }
+    main .container form button {
+        width: 150px;
+        font-size: 20px;
+    }
+    header nav li a {
+        padding: 38px 34px 15px 31px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 810px){
+    header{
+        height: 80px;
+    }
+    .container{
+        max-width: 710px;
+    }
+    header .logo {
+        font-size: 30px;
+    }
+    main .container form h2 {
+        font-size: 15px;
+    }
+    main .container form input {
+        width: 300px;
+    }
+    main .container form button {
+        width: 100px;
+        font-size: 8px;
+    }
+    header nav li a {
+        padding: 30px 25px 12px 25px;
+        font-size: 10px;
+    }
+
+    header nav li .one{
+        height: 12px;
+        width: 13px;
+        margin-left: 8px;
+        margin-bottom: 10px;
+    }
+    
+    header nav li .two{
+        height: 12px;
+        width: 17px;
+        margin-left: 8px;
+        margin-bottom: 10px;
+    }
+    
+    header nav li .three{
+        height: 12px;
+        width: 13px;
+        margin-left: 8px;
+        margin-bottom: 10px;
+    }
+    
+    header nav li .four{
+        height: 15px;
+        width: 13px;
+        margin-left: 8px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 733px){
+    header{
+        height: 65px;
+    }
+    .container{
+        max-width: 500px;
+    }
+    header .logo {
+        font-size: 20px;
+    }
+    main .container form h2 {
+        font-size: 14px;
+    }
+    main .container form input {
+        width: 250px;
+        height: 25px;
+    }
+    main .container form button {
+        height: 20px;
+        font-size: 10px;
+    }
+    header nav li a {
+        padding: 20px 15px 14px 15px;
+        font-size: 8px;
+    }
+
+    header nav li .one{
+        height: 10px;
+        width: 10px;
+        margin-left: 5px;
+        margin-bottom: 8px;
+    }
+    
+    header nav li .two{
+        height: 10px;
+        width: 14px;
+        margin-left: 5px;
+        margin-bottom: 8px;
+    }
+    
+    header nav li .three{
+        height: 10px;
+        width: 12px;
+        margin-left: 8px;
+        margin-bottom: 8px;
+    }
+    
+    header nav li .four{
+        height: 12px;
+        width: 10px;
+        margin-left: 8px;
+        margin-bottom: 8px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 533px){
+    header{
+        height: 55px;
+    }
+    .container{
+        max-width: 400px;
+    }
+    header nav li a {
+        padding: 15px 5px 15px 5px;
+    }
+    header .logo {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    main .container form h2 {
+        font-size: 10px;
+    }
+    main .container form input {
+        width: 150px;
+        height: 15px;
+    }
+    main .container form button {
+        height: 15px;
+        font-size: 10px;
+        width: 75px;
+    }
+    section .content{
+        justify-content: center;
+    }
+
+    header nav li .one{
+        height: 8px;
+        width: 8px;
+        margin-left: 7px;
+        margin-bottom: 5px;
+    }
+    
+    header nav li .two{
+        height: 8px;
+        width: 10px;
+        margin-left: 7px;
+        margin-bottom: 5px;
+    }
+    
+    header nav li .three{
+        height: 8px;
+        width: 10px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+    
+    header nav li .four{
+        height: 8px;
+        width: 8px;
+        margin-left: 7px;
+        margin-bottom: 5px;
+    }
+    footer p{
+        font-size: 8px;
+    }
+}
+/* ------------------end------------------- */
